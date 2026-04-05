@@ -90,8 +90,8 @@ export default function App() {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="bg-[#fff0f3] p-3 shadow-sm border border-[#ffccd5] rounded-xl relative w-full"
           >
-            <div className="aspect-video bg-white flex items-center justify-center overflow-hidden rounded-lg border border-[#ffccd5] relative group">
-              <video src={videoUrl} controls autoPlay loop className="w-full h-full object-cover" />
+            <div className="bg-white flex items-center justify-center overflow-hidden rounded-lg border border-[#ffccd5] relative group">
+              <video src={videoUrl} controls autoPlay loop className="w-full h-auto max-h-[70vh] object-contain" />
             </div>
           </motion.div>
         </div>
